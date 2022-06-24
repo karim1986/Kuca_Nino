@@ -1,0 +1,41 @@
+@import"./components/common/colors.scss";
+
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+  *::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: .5em;
+}
+  *::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 20px;
+    margin: 10px;
+    border: transparent;
+    padding: 0.5rem;
+}
