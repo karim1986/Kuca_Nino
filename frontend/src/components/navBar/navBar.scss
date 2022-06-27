@@ -2,7 +2,7 @@
 .header-bg {
   position: relative;
   height: 100vh;
-  // background-image: radial-gradient(circle farthest-corner at 0 0,#e7e4dc,#9d9e86);
+  background-image: radial-gradient(circle farthest-corner at 0 0,#e7e4dc,#9d9e86);
   // background-image: url("../../assets/images/foto1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +10,7 @@
 }
 
 nav {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -23,29 +23,57 @@ nav > a {
   color: #2c2d2b;
 }
 
+.nav-logo > a{
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .nav__list {
   width: 100%;
 }
 
 .nav__item {
+  position: relative;
   padding: 0.5rem 2rem;
 }
 
 .nav__item > a {
-  color: #2c2d2b;
-  font-weight: 400;
+  position: relative;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.3rem;
   margin: 0 1rem;
-  transition: color 0.3s;
+  transition: color 0.5s;
+  &:hover {
+    color: #000;
+  }
+}
+
+.nav__item > a:after {
+  content: "";
+  position: absolute;
+  background-color: #111;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -45%;
+  transition: 0.3s;
+}
+
+.nav__item > a:hover:after{
+  width: 100%;
 }
 
 .nav-menu-items {
   display: none;
 }
 
+
 .toggler {
-  position: absolute;
+  position: fixed;
   top: 32px;
-  right: 50px;
+  right: 30px;
   width: 25px;
 }
 
@@ -102,8 +130,9 @@ nav > a {
   transition: background-color 0.3s;
 
   &:hover {
-    color: #fff;
-    background-color: #70706c;
+    color: #abaf6e;
+    box-shadow: 0 0 0 3px #a6a791;
+    background-color: #171714;
   }
 }
 
@@ -120,6 +149,10 @@ nav > a {
 
   .nav__toggler {
     display: none;
+  }
+
+  .anfragen-btn {
+    display: block;
   }
 
   .nav__list {
