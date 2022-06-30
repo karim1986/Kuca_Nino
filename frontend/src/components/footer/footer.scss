@@ -1,0 +1,35 @@
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item  {
+    margin: 1rem 0;
+    font-size: 1.9rem;
+
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+}
+
+.footer__item > a {
+    color: #000;
+    font-weight: 500;
+}
+
+.footer-container {
+    position: absolute;
+    top: 53%;
+    left: 7.5%;
+    height: 300px;
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        position: static;
+        border: none;
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import Footer from "../footer/Footer";
 import "./navBar.scss";
 
 const variants = {
@@ -24,23 +25,25 @@ const NavBar = () => {
         <div className="nav-menu-items">
           <ul className="list nav__list collapsible__content">
             <li className="nav__item">
-              <a href="">WOHNEN</a>
+              <a href="">Wohnen</a>
             </li>
             <li className="nav__item">
-              <a href="">ZIMMER</a>
+              <a href="">Zimmer</a>
             </li>
             <li className="nav__item">
-              <a href="">GARTEN</a>
+              <a href="">Garten</a>
             </li>
             <li className="nav__item">
-              <a href="">INSEL</a>
+              <a href="">Insel</a>
             </li>
+            <div className="line-divider"></div>
           </ul>
         </div>
         <div className="anfragen-btn">
           <button className="booking--btn">Buchung Anfragen</button>
         </div>
       </nav>
+      <Footer />
       <div
         onClick={() => setToggle(!toggle)}
         className={
