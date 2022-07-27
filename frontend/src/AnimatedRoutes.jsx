@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import NavBar from "./components/navBar/NavBar";
+import NavBar from "./components/headerPage/NavBar";
 import Footer from "./components/footer/Footer";
 
 function AnimatedRoutes() {
