@@ -10,6 +10,13 @@
   background-position: center;
 }
 
+.new--background {
+  background: #999a81;
+  padding: 0.8rem 2.4rem;
+  height: 100vh;
+  transition: background 0.3s ease-in;
+}
+
 nav {
   width: 95%;
   margin: auto;
@@ -34,7 +41,7 @@ nav > a {
 .nav-logo > a{
   color: #000;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2.4rem;
 }
 
 .nav__list {
@@ -52,23 +59,20 @@ nav > a {
   position: relative;
   color: #000000;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   transition: color 0.5s;
 }
 
-.nav__item > a:after {
-  content: "";
-  position: absolute;
-  background-color: #111;
-  height: 2px;
-  width: 0%;
-  left: 0;
-  bottom: -45%;
-  transition: 0.3s;
-}
+
 
 .nav__item > a:hover:after{
-  width: 100%;
+  width: 0%;
+}
+
+.fade {
+ opacity: 0;
+ pointer-events: none;
+
 }
 
 .nav-menu-items {
@@ -79,7 +83,7 @@ nav > a {
   position: absolute;
   top: 10%;
   left: 2.4rem;
-  border-bottom: 1px solid rgba(124, 124, 124, 0.344);
+  border-bottom: 1.5px solid rgba(93, 93, 93, 0.344);
 }
 
 .toggler {
@@ -151,6 +155,7 @@ nav > a {
 // Desktop Version
 
 @media screen and (min-width: 768px) {
+
   nav {
    justify-content: space-between;
    width: 80%;
@@ -158,10 +163,32 @@ nav > a {
   }
 
   .nav-menu-items {
+    opacity: 1;
     display: flex;
     width: auto;
     position: static;
     border-bottom: none;
+    
+  }
+
+  .nav__item > a:after {
+    content: "";
+    position: absolute;
+    background-color: #111;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -45%;
+    transition: 0.3s;
+  }
+
+  .nav__item > a:hover:after{
+    width: 100%;
+  }
+
+  .list.fade {
+    opacity: 1;
+    pointer-events: all;
   }
 
   .nav__item > a {
@@ -185,8 +212,6 @@ nav > a {
    letter-spacing: 0.2rem; 
   }
 
-  .devider-line {
-  display: none;
-  }
+ 
 }
 

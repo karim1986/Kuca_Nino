@@ -3,6 +3,11 @@
     flex-direction: column;
 }
 
+.fade {
+   opacity: 0;
+   pointer-events: none;
+}
+
 .footer__item  {
     margin: 1rem 0;
     font-size: 1.9rem;
@@ -23,7 +28,10 @@
     left: 7.5%;
     height: 300px;
     width: 80%;
+
 }
+
+
 
 @media screen and (min-width: 768px) {
     .footer-container {
@@ -31,5 +39,13 @@
         border: none;
         width: 80%;
         margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .footer__list.fade {
+        opacity: 1;
+    }
+
 }

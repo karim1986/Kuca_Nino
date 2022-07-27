@@ -1,23 +1,18 @@
 import React from "react";
+import { FooterItem } from "../../Data/footerItem";
 import "./footer.scss";
 
-const Footer = () => {
+const Footer = ({ toggle }) => {
+  console.log(toggle);
   return (
     <div className="footer footer-container">
       <footer className="">
-        <ul className="footer__list">
-          <li className="footer__item">
-            <a href="">Home</a>
-          </li>
-          <li className="footer__item">
-            <a href="">Buchung Anfrage</a>
-          </li>
-          <li className="footer__item">
-            <a href="">FAQs</a>
-          </li>
-          <li className="footer__item">
-            <a href="">Contact</a>
-          </li>
+        <ul className={toggle ? "footer__list" : "footer__list fade"}>
+          {FooterItem.map((item, index) => (
+            <li key={index} className={item.className}>
+              <a href={item.url}>{item.title}</a>
+            </li>
+          ))}
         </ul>
       </footer>
     </div>
