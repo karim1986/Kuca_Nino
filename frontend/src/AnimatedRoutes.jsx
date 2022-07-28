@@ -11,7 +11,6 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route />
       </Routes>
-      <Footer />
     </AnimatePresence>
   );
 }
