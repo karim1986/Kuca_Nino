@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavItems } from "../../Data/navItems";
 import Footer from "../footer/Footer";
 import WelcomeText from "../welcomeText/WelcomeText";
+import Lage from "../pageContent/sectionOne/Lage";
 import "./navBar.scss";
 
 const variants = {
@@ -57,6 +58,7 @@ const NavBar = () => {
         </nav>
         <WelcomeText toggle={toggle} />
       </header>
+      <Lage />
       <Footer toggle={toggle} />
     </>
   );
