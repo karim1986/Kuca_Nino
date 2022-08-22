@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavItems } from "../../Data/navItems";
 import "./navBar.scss";
 
 function NavBar() {
+  const [toggle, setToggle] = useState(false);
+
+  const togglerHandler = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className="navBar__container">
       <div className="NavBar__content">
@@ -19,7 +25,10 @@ function NavBar() {
         <div className="navBar__btn">
           <button className="booking__btn">Buchung Anfragen</button>
         </div>
-        <div className="burger__menu">
+        <div
+          onClick={togglerHandler}
+          className={toggle ? "burger__menu active" : "burger__menu"}
+        >
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
