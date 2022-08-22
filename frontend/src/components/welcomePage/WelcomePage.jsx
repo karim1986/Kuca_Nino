@@ -1,23 +1,41 @@
-import React from "react";
-import foto from "../../assets/images/banner.jpg";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { titleAnima, wilcomeAnim } from "../../framerMotion";
 import NavBar from "../navBar/NavBar";
 import "./welcomePage.scss";
+import SectionOne from "../sectionOne/SectionOne";
+import Footer from "../footer/Footer";
 
 function WelcomePage() {
+  const [toggle, setToggle] = useState(false);
+
   return (
-    <div className="welcomePage__container welcomePage--bg">
-      <div className="welcomePage__container--section">
-        <NavBar />
-        <div className="welcomePage__text--block">
-          <h3>
-            Lošinj -<span className="text__position"> Kroatien</span>
-          </h3>
-          <h1>
-            <span className="text__italic">Wilkommen</span> im Kuca-Nino
-          </h1>
+    <>
+      <div className="welcomePage__container welcomePage--bg">
+        <div className="welcomePage__container--section">
+          <NavBar toggle={toggle} onToggle={setToggle} />
+          <div className="welcomePage__text--block">
+            <motion.h3
+              variants={titleAnima}
+              initial={titleAnima.hidden}
+              animate={titleAnima.show}
+            >
+              Lošinj -<span className="text__position"> Kroatien</span>
+            </motion.h3>
+            <motion.h1
+              variants={wilcomeAnim}
+              initial={wilcomeAnim.hidden}
+              animate={wilcomeAnim.show}
+            >
+              <span className="text__italic">Willkommen</span> im Kuca-Nino
+            </motion.h1>
+          </div>
         </div>
       </div>
-    </div>
+
+      <SectionOne />
+      <Footer />
+    </>
   );
 }
 

@@ -33,12 +33,12 @@
     font-size: 1.4rem;
     & a{
         transition: color 0.3s ease 0s;
+        font-size: 1.3rem;
     }
-   
 }
 
 .navBar__item a:hover {
-    color: red;
+    color: #ffd600;
 }
 
 .navBar__item a:after {
@@ -66,20 +66,22 @@
 
 .booking__btn {
     padding: 10px;
-    border: 1px solid rgb(70, 72, 70);
+    border: none;
     border-radius: 999px;
-    background: none;
+    background: #ffd600;
     width: 100%;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     cursor: pointer;
     word-wrap: break-word;
     outline: none;
-    transition: border 0.3s ease 0s, color 0.3s ease 0s;
+    transition: background 0.3s ease 0s, color 0.3s ease 0s;
 
     &:hover {
-        border: 1px solid red;
-        color: white;
+        color: #ffd600;
+        overflow: none;
+        background: rgba(0,0,0,0.1);
+        border: 0.5px solid #ffd600;
     }
 }
 
@@ -131,7 +133,7 @@
     .burger__menu.active .line:nth-child(1) {
             top: 18px;
             transform: rotate(135deg);
-        }
+    }
           
     .burger__menu.active .line:nth-child(2) {
             top: 18px;

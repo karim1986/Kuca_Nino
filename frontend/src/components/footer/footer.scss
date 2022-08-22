@@ -1,0 +1,34 @@
+// desktop version: 
+
+.footer__container {
+    background: #ffd600;
+    height: 28vh;
+}
+
+.footer__items {
+    padding-top: 3rem;
+    width: 80%;
+    margin: auto;
+}
+
+.contact {
+    text-align: center;
+    
+    p {
+        margin-top: 1rem;
+    }
+}
+
+.contact a {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.list {
+    padding-top: 2rem;
+    text-align: center;
+    a {
+       margin: 1rem;
+       display: block;
+    }
+}
