@@ -32,3 +32,13 @@
        display: block;
     }
 }
+
+
+// Mobile Version::
+
+@media screen and(max-width:768px){
+.footer__items {
+    margin-top: 15rem;
+}
+
+}

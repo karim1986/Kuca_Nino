@@ -4,7 +4,9 @@ import { titleAnima, wilcomeAnim } from "../../framerMotion";
 import NavBar from "../navBar/NavBar";
 import "./welcomePage.scss";
 import SectionOne from "../sectionOne/SectionOne";
+import SectionTwo from "../sectionTwo/SectionTwo";
 import Footer from "../footer/Footer";
+import SectionThree from "../sectionThree/SectionThree";
 
 function WelcomePage() {
   const [toggle, setToggle] = useState(false);
@@ -34,6 +36,8 @@ function WelcomePage() {
       </div>
 
       <SectionOne />
+      <SectionTwo />
+      <SectionThree />
       <Footer />
     </>
   );

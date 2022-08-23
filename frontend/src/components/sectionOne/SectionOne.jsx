@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import lage from "../../assets/images/lage.jpg";
 import "./sectionOne.scss";
 
