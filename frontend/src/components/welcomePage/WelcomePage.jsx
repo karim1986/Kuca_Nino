@@ -7,6 +7,7 @@ import SectionOne from "../sectionOne/SectionOne";
 import SectionTwo from "../sectionTwo/SectionTwo";
 import Footer from "../footer/Footer";
 import SectionThree from "../sectionThree/SectionThree";
+import SectionFour from "../sectionFour/SectionFour";
 
 function WelcomePage() {
   const [toggle, setToggle] = useState(false);
@@ -38,6 +39,7 @@ function WelcomePage() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
       <Footer />
     </>
   );

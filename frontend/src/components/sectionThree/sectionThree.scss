@@ -21,7 +21,7 @@
         height: 800px;
         width: 100%;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 2px;
     }
 }
 
@@ -38,7 +38,7 @@
 
 @media screen and(max-width:768px){
     .sectionThree__container {
-        height: 100vh;
+        height: 124vh;
        
     }
 
@@ -55,8 +55,6 @@
     
         img {
             height: 500px;
-            width: 100%;
-            object-fit: cover;
         }
     }
 

@@ -2,7 +2,8 @@
 
 .footer__container {
     background: #ffd600;
-    height: 28vh;
+    height: 35vh;
+    padding-bottom: 10px;
 }
 
 .footer__items {
@@ -37,8 +38,6 @@
 // Mobile Version::
 
 @media screen and(max-width:768px){
-.footer__items {
-    margin-top: 15rem;
-}
+
 
 }
